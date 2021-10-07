@@ -6,9 +6,9 @@ public class Poll {
     private final String answer1;
     private final String answer2;
     private final String question;
-    private final int superUser;
+    private final long superUser;
 
-    public Poll(long id, String answer1, String answer2, String question, int superUser) {
+    public Poll(long id, String answer1, String answer2, String question, long superUser) {
         this.id = id;
         this.answer1 = answer1;
         this.answer2 = answer2;
@@ -32,7 +32,7 @@ public class Poll {
         return question;
     }
 
-    public int getSuperUser(){
+    public long getSuperUser(){
         return superUser;
     }
 }
