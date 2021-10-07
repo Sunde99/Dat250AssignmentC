@@ -6,12 +6,14 @@ public class Poll {
     private final String answer1;
     private final String answer2;
     private final String question;
+    private final int superUser;
 
-    public Poll(long id, String answer1, String answer2, String question) {
+    public Poll(long id, String answer1, String answer2, String question, int superUser) {
         this.id = id;
         this.answer1 = answer1;
         this.answer2 = answer2;
         this.question = question;
+        this.superUser = superUser;
     }
 
     public long getId() {
@@ -28,5 +30,9 @@ public class Poll {
 
     public String getQuestion() {
         return question;
+    }
+
+    public int getSuperUser(){
+        return superUser;
     }
 }
